@@ -1,12 +1,15 @@
 expanpath=/usr/bin/expan
+perlpath=/usr/bin/perl
 IFS=$'\n'
 
 shopt -s nocasematch;
 
-ServerList=( $($expanpath list | grep -v ===))
+# ServerList=( $($expanpath list | grep -v ===))
+ServerList=( $($expanpath list | grep -v === | /usr/bin/perl -pi -e 's|^(.*) \(.*$|$1|'))
 MountedVols=( "$(ls -1 /Volumes/)")
 
-echo '<?xml version="1.0"?><items>'
+echo '<?xml version="1.0"?>'
+echo '<items>'
 echo ''
 
 
