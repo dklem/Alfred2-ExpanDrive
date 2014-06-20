@@ -13,7 +13,7 @@ for x in ${MountedVols[@]}; do
 done
 
 if [[ $matched = "1" ]]; then
-	$expanpath eject {query}
+	$expanpath eject "{query}"
 else
-	$expanpath connect {query}
+	$expanpath connect "{query}"
 fi
