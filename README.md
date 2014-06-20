@@ -3,7 +3,7 @@ ExpanDrive for Alfred
 
 Requirements
 ------------
-This workflow requires ExpanDrive 3.X, as well as Alfred 2.X. Download and open the .workflow file to install.
+This workflow requires ExpanDrive 3 or later, as well as Alfred 2 or later. Download and open the .workflow file to install.
 
 **Note:**  The ExpanDrive Terminal Utility must be installed to use this workflow. 
 
